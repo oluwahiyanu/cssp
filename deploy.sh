@@ -34,7 +34,7 @@ connectionString=$(az storage account show-connection-string \
 az storage blob upload-batch \
   --account-name $storageAccount \
   --destination \$web \
-  --source "./StaticWebPage" \
+  --source "./staticweb" \
   --connection-string "$connectionString"
 
 # Print site link
